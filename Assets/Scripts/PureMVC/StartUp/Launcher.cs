@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Launcher : MonoBehaviour
 {
+    public string ip;
+    public int port;
     // Start is called before the first frame update
     void Start()
     {
+        MessageCenter.CreateInstance();
         NetworkManager.CreateInstance();
+        NetworkManager.Instance.Connect(ip, port);
         MyFacade.GetInstance().SendNotification(MyFacade.StartUp);
     }
 
