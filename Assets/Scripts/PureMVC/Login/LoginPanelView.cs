@@ -7,8 +7,9 @@ using TMPro;
 public class LoginPanelView : MonoBehaviour
 {
     public Button loginBtn;
-    public TMP_InputField emailText;
-    public TMP_InputField passwordText;
-    public TextMeshProUGUI messageText;
+    public Button registerBtn;
+    public InputField emailText;
+    public InputField passwordText;
+    public Text messageText;
 
 }
